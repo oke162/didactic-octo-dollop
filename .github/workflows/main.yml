@@ -1,0 +1,38 @@
+name: enterprise
+on:   
+  push: 
+  pull_request: 
+  schedule: 
+    - cron: '* */6 * * *' 
+jobs:
+  terraform:
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        python:
+          - |
+          - |
+          - |
+          - |
+          - |
+          - |
+          - |
+          - |
+          - |
+          - |
+        ruby:
+          - |
+          - |
+          - |
+          - |
+          - |
+          - |
+          - |
+          - |
+          - |
+        node:
+          - |
+          - |
+    timeout-minutes: 355  
+    steps:
+    - uses: actions/checkout@v1
